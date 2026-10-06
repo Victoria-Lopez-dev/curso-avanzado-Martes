@@ -1,0 +1,38 @@
+/*
+selectores -> manera de hacer referencia a las estiquetas
+- tipo de etiqueta (h1,p,ul,...)
+- clase(class) .clase
+- id  #id
+-[atributo valor]
+- complementarios : + ~ > , 
+
+selector{
+    propiedad:valor,
+    propiedad:valor,
+
+}
+*/
+
+h1{
+    color: red;
+}
+
+.grupo1{
+    background-color: #ff3399;
+}
+#lista{
+    color: darkgreen;
+    margin: 40px;
+    border: 2px double black;
+}
+
+p+a{
+    font-size: 30px;
+}
+
+ul>li{
+    list-style-type: square;
+}
+.clase2{
+    color: darkslateblue;
+}

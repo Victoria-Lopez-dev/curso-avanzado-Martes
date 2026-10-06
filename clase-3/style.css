@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(7, 32, 32);
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    position: fixed;
+    bottom: 0;
+    border: 4px double gold;
+    background-color: darkorange;
+}
+
+/*
+grid - flex -> usa la propiedad display
+dentro de un mismo selector no puedo usar flex y grid al mismo tiempo.
+*/

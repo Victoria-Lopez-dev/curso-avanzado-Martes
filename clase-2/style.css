@@ -1,0 +1,60 @@
+ *{
+    box-sizing: border-box;
+}
+video {
+    width: 500px;
+    display: block;
+    margin-top: 20px;
+}
+.video2{
+    padding: 10px;
+    background-color: darkcyan;
+    width: fit-content;
+}
+article{
+    width: 500px;
+}
+.barra-reproduccion{
+    padding: 10px;
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+.btn-barra{
+    padding: 10px;
+    background-color: lightseagreen;
+   
+    border-radius: 10px;
+    border: 0;
+   box-shadow: 2px 2px black;
+}
+.barra-progreso{
+    width: 100%;
+    background-color:rgb(26, 41, 41) ;
+    height: 10px;
+}
+.progreso{
+    height: 100%;
+    width: 0%;
+    background-color: #f90;
+}
+
+.duracion{
+    font-size: 20px;
+}
+#btn-audio{
+    padding:25px 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px gray;
+    margin-bottom: 20px;
+}
+#btn-audio:active,.btn-barra:active{
+    box-shadow: none;
+    transform: translate(2px,2px);
+}
+.fondo{
+    background-color: #f90;
+}
