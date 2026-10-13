@@ -1,0 +1,67 @@
+body{
+    margin:0
+}
+svg{
+    /* border: 2px solid black; */
+    width: 500px;
+    height: 400px;
+    display: block;
+}
+img{
+    width: 300px;
+}
+
+
+
+/*----------------------------------------------*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    transition: all 2s;
+    border-bottom: 4px solid blueviolet;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.cambioNav{
+    background-color: orange;
+    border-bottom: 4px solid red;
+    
+}
+circle{
+    transform: translateX(-100px);
+    transition:transform 3s;
+}
+circle:hover{
+    transform: translateX(10px);
+}
+/*
+transform
+animation
+
+*/
+#rect1{
+    animation:mover 4s alternate 3 forwards;
+}
+@keyframes mover {
+    0%{
+        opacity: 0.1;
+    }
+    10%{
+        transform: translateX(100px);
+       
+    }
+    44%{
+        transform: translateX(100px) rotate(45deg);
+    }
+    100%{
+        transform: translate(100px,200px);
+    }
+}

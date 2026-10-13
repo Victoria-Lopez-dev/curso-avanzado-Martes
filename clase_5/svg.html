@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clase - 5</title>
+</head>
+<body onscroll="mostrar()">
+    <nav>
+        <p>ICONO</p>
+
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+    </nav>
+    <h1>Usando SVG</h1> 
+    <img src="./images/undraw_focused-dev_gqoa.svg" alt="">
+    <svg><!-- 500x400-->
+   
+        <rect 
+        x="200" 
+        y="100" 
+        width="100" 
+        height="100" 
+        fill="rgb(200,33,22)" 
+        stroke="black" 
+        stroke-width="5" 
+        rx="10"
+        id="rect1"></rect>
+    
+        <rect 
+        x="200" 
+        y="70" 
+        width="133" 
+        height="40" 
+        fill="blue" ></rect>
+
+        <circle
+            cx="500"
+            cy="200"
+            r="80"
+            fill="#a47722"
+        >
+    </circle>
+         <circle
+            cx="500"
+            cy="200"
+            r="10"
+            fill="white"
+        ></circle>
+
+        <ellipse
+        cx="150"
+        cy="300"
+        rx="100"
+        ry="44"
+        fill="none"
+        stroke-width="4"
+        stroke="blueviolet"
+        ></ellipse>
+        <line
+        x1="40"
+        y1="30"
+        x2="40"
+        y2="130"
+        stroke="green"
+        stroke-width="4"
+        ></line>
+        <polyline
+        points="100 55,147 100,170 30,220 120, 280 44"
+        fill="lightpink"
+        stroke="#f90"
+        stroke-width="5"
+        ></polyline>
+        <polygon
+        points="300 300,330 200,360 400,380 150"
+        stroke-width="5"
+        stroke="darkgreen"
+        fill="none"
+        ></polygon>
+    </svg>
+
+    <svg>
+        <rect
+            x="100"
+            y="100"
+            width="200"
+            height="120"
+            rx="10"
+            fill="#44aaff"
+        ></rect>
+       <circle
+       cx="300"
+       cy="140"
+       r="10">
+       </circle>
+        <rect
+        x="96"
+        y="218"
+        width="210"
+        height="20"
+        rx="10"
+        fill="#44aaff"
+        ></rect>
+    </svg>
+    <canvas></canvas>
+ <script src="./script.js"></script>
+</body>
+</html>
+<!-- svg 
+
+    formas primitivas - formas geometricas
+    rect - circle-ellipse-line-polyline-polygon
+
+    atributos:
+    x ->eje horizontal
+    y -> eje vertical
+    fill-> color de relleno
+    stroke-> color de contorno
+    stroke-width -> ancho del contorno
+    cx -> punto eje x del centro de la circunferencia
+    cy -> punto eje y del centro de la circunferencia
+    r -> radio de la circuferencia
+    rx -> radio eje x de la elipse 
+    ry ->radio eje y de la elipse 
+    x1,y1-> punto 
+    x2,y2 -> punto
+    points -> conjunto de pares x y separados con una coma que representan puntos continuos
+-->
