@@ -1,7 +1,11 @@
-[{
-    "dato1":222,
-    "dato2":"skjk"
-},{
-    "dato1":222,
-    "dato2":"skjk"
-}]
+{
+    "dato":[{
+        "dato1":222,
+        "dato2":"skjk"
+    },
+    {
+        "dato1":222,
+        "dato2":"skjk"
+    }],
+    "otra cosa":true
+}

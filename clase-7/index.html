@@ -6,7 +6,7 @@
   <title>Web Storage</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body >
+<body onload="carga()">
   <div class="page-shell">
     <header class="site-header">
       <h1 class="brand">ATELIER SOBRIO</h1>
@@ -21,7 +21,8 @@
           <img src="./images/canasto.png" alt="">
           <p id="count">0</p>
         </button>
-        <button id="botonTheme" onclick="theme(this)" class="icon-button icon-button-theme" aria-label="Account">DAY</button>
+        <!-- boton de cambio de tema -->
+        <button id="botonTheme" onclick="tema(this.textContent)" class="icon-button icon-button-theme" aria-label="Account">DAY</button>
       </div>
     </header>
 
@@ -42,7 +43,7 @@
             <p>Hand-finished Ash Wood</p>
           </div>
           <div class="product-price">$3,800</div>
-          <button id="cama" class="hero-button " >Buy Now</button>
+          <button id="cama" class="hero-button " onclick="sumarAlCarrito(this.id)">Buy Now</button>
         </article>
 
         <article class="product-card product-card--light">
@@ -52,7 +53,7 @@
             <p>Vegetable Tanned Leather</p>
           </div>
           <div class="product-price">$2,800</div>
-          <button id="sillon" class="hero-button" >Buy Now</button>
+          <button id="sillon" class="hero-button" onclick="sumarAlCarrito(this.id)">Buy Now</button>
         </article>
 
         <article class="product-card product-card--dark">
@@ -64,7 +65,7 @@
             <p>Midnight Velvet</p>
           </div>
           <div class="product-price">$3,100</div>
-          <button id="silla" class="hero-button ">Buy Now</button>
+          <button id="silla" class="hero-button "onclick="sumarAlCarrito(this.id)">Buy Now</button>
         </article>
       </section>
 
